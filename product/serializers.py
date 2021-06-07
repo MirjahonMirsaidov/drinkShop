@@ -17,10 +17,18 @@ class BrandSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class ImageSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Image
+        fields = ('image',)
+
+
 class ProductSerializer(serializers.ModelSerializer):
     category = CategorySerializer()
     brand = BrandSerializer()
+    image = ImageSerializer(many=True, required=False)
 
     class Meta:
         model = Product
-        fields = '__all__'
+        fields = ('id', 'title', 'category', 'brand', 'image', 'price', 'size', 'stock_count')
