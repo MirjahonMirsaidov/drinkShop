@@ -21,6 +21,7 @@ class ProductImageAdmin(admin.StackedInline):
 class ProductAdmin(admin.ModelAdmin):
     inlines = [ProductImageAdmin]
     list_display = ('id', 'title', 'category', 'brand', 'price', 'size', 'stock_count')
+    list_filter = ('category', 'brand', 'price', 'size')
 
     class Meta:
         model = Product
