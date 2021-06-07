@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
 
     'product',
 ]
@@ -76,6 +77,11 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'drinkShop.wsgi.application'
+
+# Rest framework Settings
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+}
 
 
 # Database
