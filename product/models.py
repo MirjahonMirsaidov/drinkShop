@@ -49,3 +49,10 @@ class Image(models.Model):
     def __str__(self):
         return self.product.title
 
+    def image_tag(self):
+        from django.utils.html import mark_safe
+        return mark_safe('<img src="/media/%s" width="100" height="100" />' % (self.image))
+
+    image_tag.short_description = 'Image'
+    image_tag.allow_tags = True
+

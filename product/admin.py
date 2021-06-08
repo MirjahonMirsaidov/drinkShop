@@ -11,7 +11,6 @@ admin.site.unregister(Group)
 admin.site.unregister(User)
 admin.site.unregister(Theme)
 
-
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
 
@@ -51,4 +50,5 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Image)
 class ProductImageAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('product', 'image', 'image_tag', )
+    readonly_fields = ('image_tag',)
