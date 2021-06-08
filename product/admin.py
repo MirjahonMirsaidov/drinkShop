@@ -15,7 +15,6 @@ admin.site.unregister(Theme)
 class CategoryAdmin(admin.ModelAdmin):
 
     list_display = ('name', 'view_products_link')
-    list_filter = ('name',)
     search_fields = ('name',)
 
     def view_products_link(self, obj):
@@ -34,7 +33,6 @@ class CategoryAdmin(admin.ModelAdmin):
 class BrandAdmin(admin.ModelAdmin):
 
     list_display = ('name', 'view_products_link')
-    list_filter = ('name',)
     search_fields = ('name',)
 
     def view_products_link(self, obj):
@@ -57,8 +55,10 @@ class ProductImageAdmin(admin.StackedInline):
 class ProductAdmin(admin.ModelAdmin):
     inlines = [ProductImageAdmin]
     list_display = ('id', 'title', 'category', 'brand', 'price', 'size', 'stock_count')
-    list_filter = ('category', 'brand', 'price')
+    list_filter = ('created_at', 'price', 'category', 'brand')
+    list_editable = ('price', 'stock_count')
     search_fields = ('title', 'brand__name', 'category__name')
+    list_per_page = 5
 
     class Meta:
         model = Product

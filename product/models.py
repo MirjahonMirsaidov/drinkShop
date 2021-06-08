@@ -25,6 +25,7 @@ class Product(models.Model):
     price = models.FloatField()
     size = models.CharField(max_length=255)
     stock_count = models.PositiveIntegerField()
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def save(self):
         super(Product, self).save()
