@@ -15,6 +15,8 @@ admin.site.unregister(Theme)
 class CategoryAdmin(admin.ModelAdmin):
 
     list_display = ('name', 'view_products_link')
+    list_filter = ('name',)
+    search_fields = ('name',)
 
     def view_products_link(self, obj):
         count = obj.product_set.count()
@@ -30,7 +32,21 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
-    pass
+
+    list_display = ('name', 'view_products_link')
+    list_filter = ('name',)
+    search_fields = ('name',)
+
+    def view_products_link(self, obj):
+        count = obj.product_set.count()
+        url = (
+                reverse("admin:product_product_changelist")
+                + "?"
+                + urlencode({"brand__id": f"{obj.id}"})
+        )
+        return format_html('<b><a href="{}">{} Products</a></b>', url, count)
+
+    view_products_link.short_description = "Products"
 
 
 class ProductImageAdmin(admin.StackedInline):
