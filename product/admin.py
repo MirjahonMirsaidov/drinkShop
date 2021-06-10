@@ -9,7 +9,8 @@ from .models import *
 
 admin.site.unregister(Group)
 admin.site.unregister(User)
-# admin.site.unregister(Theme)
+admin.site.unregister(Theme)
+
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
@@ -60,17 +61,16 @@ class ProductAdmin(admin.ModelAdmin):
     list_editable = ('price', 'stock_count')
     search_fields = ('title', 'brand__name', 'category__name')
     list_per_page = 5
-    raw_id_fields = ("category",)
     save_on_top = True
     save_as = True
 
 
     class Meta:
         model = Product
-
-
-@admin.register(Image)
-class ProductImageAdmin(admin.ModelAdmin):
-    list_display = ('id', 'product', 'image', 'image_tag', )
-    readonly_fields = ('image_tag',)
-    list_display_links = ('product',)
+#
+#
+# @admin.register(Image)
+# class ProductImageAdmin(admin.ModelAdmin):
+#     list_display = ('id', 'product', 'image', 'image_tag', )
+#     readonly_fields = ('image_tag',)
+#     list_display_links = ('product',)
