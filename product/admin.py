@@ -8,7 +8,7 @@ from django.utils.http import urlencode
 from .models import *
 
 admin.site.unregister(Group)
-admin.site.unregister(User)
+# admin.site.unregister(User)
 admin.site.unregister(Theme)
 
 @admin.register(Category)
