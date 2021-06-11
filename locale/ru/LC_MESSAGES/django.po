@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-11 15:54+0500\n"
+"POT-Creation-Date: 2021-06-11 16:21+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,15 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\drinkShop\settings.py:136
+#: .\drinkShop\settings.py:138
 msgid "Uzbek"
 msgstr "Узбекский"
 
-#: .\drinkShop\settings.py:137
+#: .\drinkShop\settings.py:139
 msgid "English"
 msgstr "Английский"
 
-#: .\drinkShop\settings.py:138
+#: .\drinkShop\settings.py:140
 msgid "Russian"
 msgstr "Русский"
 
@@ -42,4 +42,59 @@ msgstr "Изменит пароль"
 
 #: .\templates\admin\base_site.html:33
 msgid "Log out"
+msgstr "Выйти"
+
+#: .\templates\admin\change_list.html:31
+msgid "Home"
+msgstr ""
+
+#: .\templates\admin\change_list.html:51 .\templates\admin\login.html:23
+msgid "Please correct the error below."
+msgstr ""
+
+#: .\templates\admin\change_list.html:51 .\templates\admin\login.html:23
+msgid "Please correct the errors below."
+msgstr ""
+
+#: .\templates\admin\change_list.html:76
+msgid "Filter"
+msgstr ""
+
+#: .\templates\admin\change_list.html:78
+msgid "Clear all filters"
+msgstr ""
+
+#: .\templates\admin\change_list_object_tools.html:8
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: .\templates\admin\change_list_results.html:17
+msgid "Remove from sorting"
+msgstr ""
+
+#: .\templates\admin\change_list_results.html:18
+#, python-format
+msgid "Sorting priority: %(priority_number)s"
+msgstr ""
+
+#: .\templates\admin\change_list_results.html:19
+msgid "Toggle sorting"
+msgstr ""
+
+#: .\templates\admin\login.html:39
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this "
+"page. Would you like to login to a different account?"
+msgstr ""
+
+#: .\templates\admin\login.html:59
+msgid "Forgotten your password or username?"
+msgstr ""
+
+#: .\templates\admin\login.html:63
+#, fuzzy
+#| msgid "Log out"
+msgid "Log in"
 msgstr "Выйти"

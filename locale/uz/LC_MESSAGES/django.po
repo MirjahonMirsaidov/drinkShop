@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-11 15:54+0500\n"
+"POT-Creation-Date: 2021-06-11 16:21+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,31 +18,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\drinkShop\settings.py:136
+#: .\drinkShop\settings.py:138
 msgid "Uzbek"
 msgstr "O'zbekcha"
 
-
-#: .\drinkShop\settings.py:137
+#: .\drinkShop\settings.py:139
 msgid "English"
 msgstr "Inglizcha"
 
-
-#: .\drinkShop\settings.py:138
+#: .\drinkShop\settings.py:140
 msgid "Russian"
 msgstr "Ruscha"
-
 
 #: .\templates\admin\base_site.html:27
 msgid "Documentation"
 msgstr "Hujjatlashtirish"
 
-
 #: .\templates\admin\base_site.html:31
 msgid "Change password"
 msgstr "Parolni o'zgartirish"
 
-
 #: .\templates\admin\base_site.html:33
 msgid "Log out"
 msgstr "Chiqish"
+
+#: .\templates\admin\change_list.html:31
+msgid "Home"
+msgstr "Bosh sahifa"
+
+#: .\templates\admin\change_list.html:51 .\templates\admin\login.html:23
+msgid "Iltimos, quyidagi xatoni to'g'rilang."
+msgstr ""
+
+
+#: .\templates\admin\change_list.html:76
+msgid "Filter"
+msgstr "Filtrlash"
+
+#: .\templates\admin\change_list.html:78
+msgid "Clear all filters"
+msgstr "Barcha filtrlarni tozalash"
+
+#: .\templates\admin\change_list_object_tools.html:8
+#, python-format
+msgid "Add %(name)s"
+msgstr "%(name)s qo'shish"
+
+#: .\templates\admin\change_list_results.html:17
+msgid "Remove from sorting"
+msgstr "Saralashni bekor qilish"
+
+#: .\templates\admin\change_list_results.html:18
+#, python-format
+msgid "Sorting priority: %(priority_number)s"
+msgstr "Saralashning ustuvorligi %(priority_number)s"
+
+#: .\templates\admin\change_list_results.html:19
+msgid "Toggle sorting"
+msgstr ""
+
+#: .\templates\admin\login.html:39
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this "
+"page. Would you like to login to a different account?"
+msgstr ""
+
+#: .\templates\admin\login.html:59
+msgid "Forgotten your password or username?"
+msgstr "Login yoki parolni unutdingizmi?"
+
+#: .\templates\admin\login.html:63
+msgid "Log in"
+msgstr "Kirish"
