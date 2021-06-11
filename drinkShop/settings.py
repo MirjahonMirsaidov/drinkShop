@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_filters',
+    'rosetta',  # manage translations in the django admin
 
 
 
@@ -166,3 +167,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
+# rosetta Settings
+ROSETTA_MESSAGES_PER_PAGE = 100000
