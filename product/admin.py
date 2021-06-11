@@ -51,7 +51,7 @@ class ProductAdmin(admin.ModelAdmin):
     inlines = [ProductImageAdmin]
     list_display = ('id', 'title', 'category', 'brand', 'price', 'size', 'stock_count', 'created_at')
     list_display_links = ('title',)
-    list_filter = ('created_at', 'price', 'category', 'brand')
+    list_filter = ('created_at', 'category', 'brand')
     list_editable = ('price', 'stock_count')
     search_fields = ('title', 'brand__name', 'category__name')
     list_per_page = 5

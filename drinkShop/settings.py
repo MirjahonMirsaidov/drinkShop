@@ -51,10 +51,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_filters',
-    'rosetta',  # manage translations in the django admin
-
-
-
+    'translation_manager',
+    
     # custom apps
     'product',
 ]

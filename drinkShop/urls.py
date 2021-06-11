@@ -23,6 +23,5 @@ from django.conf.urls.static import static
 urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
     path('api/product/', include('product.urls')),
-    path('rosetta/', include('rosetta.urls')),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
