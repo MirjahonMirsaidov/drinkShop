@@ -1,14 +1,9 @@
-from admin_interface.models import Theme
 from django.contrib import admin
-from django.contrib.auth.models import Group, User
 from django.urls import reverse
 from django.utils.html import format_html
 from django.utils.http import urlencode
 
 from .models import *
-
-admin.site.unregister(Group)
-admin.site.unregister(Theme)
 
 
 @admin.register(Category)
