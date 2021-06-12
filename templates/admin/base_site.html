@@ -12,7 +12,11 @@
 {% endblock %}
  
 {% block userlinks %}
-    <a href="{{ request|switch_i18n:'en' }}">
+
+    {% get_current_language as LANGUAGE_CODE %}
+
+    
+    <!-- <a href="{{ request|switch_i18n:'en' }}">
         <img class="i18n_flag" src="{% static 'images/eng.png' %}"/>
     </a> /
     <a href="{{ request|switch_i18n:'ru' }}">
@@ -20,7 +24,7 @@
     </a> /
     <a href="{{ request|switch_i18n:'uz' }}">
         <img class="i18n_flag" src="{% static 'images/uzb.png' %}"/>
-    </a> /
+    </a> / -->
     {% if user.is_active and user.is_staff %}
         {% url 'django-admindocs-docroot' as docsroot %}
         {% if docsroot %}
@@ -30,5 +34,18 @@
     {% if user.has_usable_password %}
         <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
     {% endif %}
-    <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+    <a style="line-height: 35px; margin-right: 10px;" href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+    <form style="float: right;" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+        <input type="hidden" name="text"  value="{{ redirect_to }}">
+        <select name="language" id="lang" onchange="this.form.submit();" style="border: none;">
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %}>
+                    {{ language.name_local}}
+                </option>
+            {% endfor %}            
+        </select>
+        
+    </form>
 {% endblock %}

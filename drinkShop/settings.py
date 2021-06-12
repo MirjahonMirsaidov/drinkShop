@@ -57,7 +57,6 @@ INSTALLED_APPS = [
     'product',
 ]
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -144,7 +143,10 @@ MULTILINGUAL_LANGUAGES = (
     "uz-Uz",
 )
 
-TRANSLATIONS_CLEAN_PO_AFTER_BACKUP = True
+
+
+TRANSLATIONS_HINT_LANGUAGE_FORCED_RELATIVE_LOCALE_PATH = 'drinkShop/locale'
+TRANSLATIONS_CLEAN_PO_AFTER_BACKUP = False
 
 
 TIME_ZONE = 'Asia/Tashkent'
