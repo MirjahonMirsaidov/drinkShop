@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: webmaster@localhost\n"
-"POT-Creation-Date: 2021-06-12 15:37:04\n"
-"PO-Revision-Date: 2021-06-12 15:37:04\n"
+"POT-Creation-Date: 2021-06-12 15:24:41\n"
+"PO-Revision-Date: 2021-06-12 15:24:41\n"
 "Last-Translator: Server <root@localhost>\n"
 "Language-Team: English <webmaster@localhost>\n"
 "MIME-Version: 1.0\n"
@@ -45,6 +45,7 @@ msgstr "Brendlar"
 msgid "Categories"
 msgstr "Kategoriyalar"
 
+
 #: .\product\models.py:10
 msgid "Category"
 msgstr "Kategoriya"
@@ -55,6 +56,7 @@ msgstr "Kategoriya"
 #: .\templates\admin\widgets\related_widget_wrapper.html:11
 msgid "Change"
 msgstr "O'zgartirish"
+
 
 #: .\templates\admin\auth\user\change_password.html:14
 #: .\templates\admin\auth\user\change_password.html:52
@@ -180,6 +182,26 @@ msgstr "Ruscha"
 #: .\templates\admin\actions.html:16
 msgid "Select all %(total_count)s %(module_name)s"
 msgstr "Barchasini tanlash %(total_count)s %(module_name)s"
+
+#: .\product\models.py:7 .\product\models.py:18
+msgid "name"
+msgstr "nomi"
+
+#: .\product\models.py:34
+msgid "price"
+msgstr "narxi"
+
+#: .\templates\admin\index.html:23
+msgid "Recent actions"
+msgstr "Hujjatlashtirish"
+
+#: .\templates\admin\change_list_results.html:17
+msgid "Remove from sorting"
+msgstr "Saralashni bekor qilish"
+
+#: .\drinkShop\settings.py:140
+msgid "Russian"
+msgstr "Ruscha"
 
 #: .\product\models.py:35
 msgid "size"

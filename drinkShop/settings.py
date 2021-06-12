@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'translation_manager',
-    
+
     # custom apps
     'product',
 ]
@@ -131,11 +131,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGES = (
+LANGUAGES = [
     ('uz', _('Uzbek')),
     ('en', _('English')),
     ('ru', _('Russian')),
-)
+]
 
 MULTILINGUAL_LANGUAGES = (
     "en-us",
@@ -144,10 +144,8 @@ MULTILINGUAL_LANGUAGES = (
 )
 
 
-
 TRANSLATIONS_HINT_LANGUAGE_FORCED_RELATIVE_LOCALE_PATH = 'drinkShop/locale'
 TRANSLATIONS_CLEAN_PO_AFTER_BACKUP = False
-
 
 TIME_ZONE = 'Asia/Tashkent'
 

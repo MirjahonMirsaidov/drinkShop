@@ -2,12 +2,13 @@ from django.contrib import admin
 from django.urls import reverse
 from django.utils.html import format_html
 from django.utils.http import urlencode
+from modeltranslation.admin import TranslationAdmin
 
 from .models import *
 
 
 @admin.register(Category)
-class CategoryAdmin(admin.ModelAdmin):
+class CategoryAdmin(TranslationAdmin):
 
     list_display = ('id', 'name', 'view_products_link')
     search_fields = ('name',)
@@ -25,7 +26,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 @admin.register(Brand)
-class BrandAdmin(admin.ModelAdmin):
+class BrandAdmin(TranslationAdmin):
 
     list_display = ('id', 'name', 'view_products_link')
     search_fields = ('name',)
@@ -47,7 +48,7 @@ class ProductImageAdmin(admin.TabularInline):
 
 
 @admin.register(Product)
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(TranslationAdmin):
     inlines = [ProductImageAdmin]
     list_display = ('id', 'title', 'category', 'brand', 'price', 'size', 'stock_count', 'created_at')
     list_display_links = ('title',)

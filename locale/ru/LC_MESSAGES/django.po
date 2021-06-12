@@ -109,9 +109,37 @@ msgstr "Выйти"
 msgid "Objects"
 msgstr "Объекты"
 
-#: .\templates\admin\index.html:23
-msgid "Recent actions"
+#: .\templates\admin\base.html:49 .\templates\admin\base_site.html:27
+msgid "Documentation"
 msgstr "Документация"
+
+#: .\drinkShop\settings.py:139
+msgid "English"
+msgstr "Английский"
+
+#: .\templates\admin\change_form_object_tools.html:5
+#: .\templates\admin\object_history.html:10
+msgid "History"
+msgstr "История"
+
+#: .\templates\admin\500.html:6 .\templates\admin\app_index.html:9
+#: .\templates\admin\auth\user\change_password.html:10
+#: .\templates\admin\base.html:65 .\templates\admin\change_form.html:18
+#: .\templates\admin\change_list.html:31
+#: .\templates\admin\delete_confirmation.html:14
+#: .\templates\admin\delete_selected_confirmation.html:14
+#: .\templates\admin\invalid_setup.html:6
+#: .\templates\admin\object_history.html:6
+msgid "Home"
+msgstr "Главный"
+
+#: .\templates\admin\login.html:63
+msgid "Log in"
+msgstr "Выйти"
+
+#: .\templates\admin\base.html:55 .\templates\admin\base_site.html:33
+msgid "Log out"
+msgstr "Выйти"
 
 #: .\drinkShop\settings.py:140
 msgid "Russian"
