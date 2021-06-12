@@ -34,6 +34,9 @@ class CategoryListView(ListAPIView):
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
 
+    def get_queryset(self):
+        return Category.objects.all()
+
 
 class BrandListView(ListAPIView):
     serializer_class = BrandSerializer

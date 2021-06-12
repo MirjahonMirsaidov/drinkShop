@@ -7,14 +7,14 @@ class CategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = ('id', 'name')
 
 
 class BrandSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Brand
-        fields = '__all__'
+        fields = ('id', 'name')
 
 
 class ImageSerializer(serializers.ModelSerializer):
@@ -31,4 +31,4 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ('id', 'title', 'category', 'brand', 'image', 'price', 'size', 'stock_count')
+        fields = ('id', 'title', 'category', 'brand', 'image', 'price', 'size', 'stock_count', 'description')
