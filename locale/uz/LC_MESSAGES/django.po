@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: webmaster@localhost\n"
-"POT-Creation-Date: 2021-06-11 18:41:14\n"
-"PO-Revision-Date: 2021-06-11 18:41:14\n"
+"POT-Creation-Date: 2021-06-12 09:34:41\n"
+"PO-Revision-Date: 2021-06-12 09:34:41\n"
 "Last-Translator: Server <root@localhost>\n"
 "Language-Team: English <webmaster@localhost>\n"
 "MIME-Version: 1.0\n"
@@ -29,6 +29,10 @@ msgstr "%(name)s qo'shish"
 msgid "Brand"
 msgstr "Brend"
 
+#: .\product\models.py:22
+msgid "Brands"
+msgstr "Brendlar"
+
 #: .\product\models.py:10
 msgid "Category"
 msgstr "Kategoriya"
@@ -46,6 +50,24 @@ msgstr "Parolni o'zgartirish"
 #: .\templates\admin\change_list.html:78
 msgid "Clear all filters"
 msgstr "Barcha filtrlarni tozalash"
+
+#: .\templates\admin\actions.html:18
+msgid "Clear selection"
+msgstr "Tanlanganlarni tozalash"
+
+#: .\templates\admin\submit_line.html:12
+msgid "Close"
+msgstr "Ortga"
+
+#: .\templates\admin\object_history.html:22
+msgid "Date/time"
+msgstr "Vaqt"
+
+#: .\templates\admin\delete_confirmation.html:18
+#: .\templates\admin\submit_line.html:7
+#: .\templates\admin\widgets\related_widget_wrapper.html:25
+msgid "Delete"
+msgstr "O'chirish"
 
 #: .\product\models.py:30
 msgid "description"

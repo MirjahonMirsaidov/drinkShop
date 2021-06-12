@@ -144,6 +144,8 @@ MULTILINGUAL_LANGUAGES = (
     "uz-Uz",
 )
 
+TRANSLATIONS_CLEAN_PO_AFTER_BACKUP = True
+
 
 TIME_ZONE = 'Asia/Tashkent'
 
@@ -166,5 +168,3 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
-# rosetta Settings
-ROSETTA_MESSAGES_PER_PAGE = 100000
