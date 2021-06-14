@@ -132,19 +132,14 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGES = [
     ('uz', _('Uzbek')),
-    ('en', _('English')),
     ('ru', _('Russian')),
 ]
 
 MULTILINGUAL_LANGUAGES = (
-    "en-us",
     "ru-Ru",
     "uz-Uz",
 )
 
-
-TRANSLATIONS_HINT_LANGUAGE_FORCED_RELATIVE_LOCALE_PATH = 'drinkShop/locale'
-TRANSLATIONS_CLEAN_PO_AFTER_BACKUP = False
 
 TIME_ZONE = 'Asia/Tashkent'
 
