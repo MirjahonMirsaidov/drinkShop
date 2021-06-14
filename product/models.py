@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
+from tinymce.models import HTMLField
 
 
 class Category(models.Model):
@@ -18,7 +19,7 @@ class Brand(models.Model):
 
 class Product(models.Model):
     title = models.CharField(max_length=100)
-    description = models.TextField()
+    description = HTMLField()
     category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
     brand = models.ForeignKey(Brand, on_delete=models.DO_NOTHING)
     slug = models.SlugField(default='', editable=False)
