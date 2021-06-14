@@ -28,8 +28,8 @@ class Brand(models.Model):
 class Product(models.Model):
     title = models.CharField(verbose_name=_('title'), max_length=100)
     description = models.TextField(verbose_name=_('description'))
-    category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
-    brand = models.ForeignKey(Brand, on_delete=models.DO_NOTHING)
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
+    brand = models.ForeignKey(Brand, on_delete=models.SET_NULL, null=True)
     slug = models.SlugField(default='', editable=False)
     price = models.FloatField(verbose_name=_('price'))
     size = models.CharField(verbose_name=_('size'), max_length=255)
@@ -57,7 +57,7 @@ class Product(models.Model):
 
 
 class Image(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.DO_NOTHING, related_name='image')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='image')
     image = models.ImageField(verbose_name=_('image'))
 
     class Meta:
