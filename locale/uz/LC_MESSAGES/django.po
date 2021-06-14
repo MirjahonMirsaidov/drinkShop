@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: webmaster@localhost\n"
-"POT-Creation-Date: 2021-06-12 15:24:41\n"
-"PO-Revision-Date: 2021-06-12 15:24:41\n"
+"POT-Creation-Date: 2021-06-14 12:41:22\n"
+"PO-Revision-Date: 2021-06-14 12:41:22\n"
 "Last-Translator: Server <root@localhost>\n"
 "Language-Team: English <webmaster@localhost>\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +45,6 @@ msgstr "Brendlar"
 msgid "Categories"
 msgstr "Kategoriyalar"
 
-
 #: .\product\models.py:10
 msgid "Category"
 msgstr "Kategoriya"
@@ -56,7 +55,6 @@ msgstr "Kategoriya"
 #: .\templates\admin\widgets\related_widget_wrapper.html:11
 msgid "Change"
 msgstr "O'zgartirish"
-
 
 #: .\templates\admin\auth\user\change_password.html:14
 #: .\templates\admin\auth\user\change_password.html:52
@@ -110,6 +108,10 @@ msgstr "Hujjatlashtirish"
 msgid "English"
 msgstr "Inglizcha"
 
+#: .\templates\admin\auth\user\add_form.html:8
+msgid "Enter a username and password."
+msgstr "Foydalanuvchi nomi va parolni kiriting."
+
 #: .\templates\admin\change_list.html:76
 msgid "Filter"
 msgstr "Filtrlash"
@@ -138,6 +140,14 @@ msgstr "Tarix"
 msgid "Home"
 msgstr "Bosh sahifa"
 
+#: .\product\models.py:61
+msgid "image"
+msgstr "rasm"
+
+#: .\product\models.py:64
+msgid "Image"
+msgstr "Rasm"
+
 #: .\product\models.py:65
 msgid "Images"
 msgstr "Rasmlar"
@@ -159,9 +169,21 @@ msgstr "nomi"
 msgid "Objects"
 msgstr "Obyektlar"
 
+#: .\templates\admin\404.html:4 .\templates\admin\404.html:8
+msgid "Page not found"
+msgstr "Sahifa topilmadi"
+
+#: .\templates\admin\popup_response.html:3
+msgid "Popup closing…"
+msgstr "Oynani yopish"
+
 #: .\product\models.py:34
 msgid "price"
 msgstr "narxi"
+
+#: .\product\models.py:52
+msgid "Product"
+msgstr "Maxsulot"
 
 #: .\product\models.py:53
 msgid "Products"
@@ -175,33 +197,44 @@ msgstr "Hujjatlashtirish"
 msgid "Remove from sorting"
 msgstr "Saralashni bekor qilish"
 
+#: .\templates\admin\actions.html:8
+msgid "Run the selected action"
+msgstr "Tanlangan amalni bajarish"
+
 #: .\drinkShop\settings.py:140
 msgid "Russian"
 msgstr "Ruscha"
+
+#: .\templates\admin\pagination.html:11 .\templates\admin\submit_line.html:4
+msgid "Save"
+msgstr "Saqlash"
+
+#: .\templates\admin\submit_line.html:10
+msgid "Save and add another"
+msgstr "Saqlash va boshqa qo'shish"
+
+#: .\templates\admin\submit_line.html:11
+msgid "Save and continue editing"
+msgstr "Saqlash va davom ettirish"
+
+#: .\templates\admin\submit_line.html:11
+msgid "Save and view"
+msgstr "Saqlash va ko'rish"
+
+#: .\templates\admin\submit_line.html:9
+msgid "Save as new"
+msgstr "Yangi qo'shish"
+
+#: .\templates\admin\search_form.html:7
+msgid "Search"
+msgstr "Qidiruv"
+
+msgid "Select"
+msgstr "Tanlash"
 
 #: .\templates\admin\actions.html:16
 msgid "Select all %(total_count)s %(module_name)s"
 msgstr "Barchasini tanlash %(total_count)s %(module_name)s"
-
-#: .\product\models.py:7 .\product\models.py:18
-msgid "name"
-msgstr "nomi"
-
-#: .\product\models.py:34
-msgid "price"
-msgstr "narxi"
-
-#: .\templates\admin\index.html:23
-msgid "Recent actions"
-msgstr "Hujjatlashtirish"
-
-#: .\templates\admin\change_list_results.html:17
-msgid "Remove from sorting"
-msgstr "Saralashni bekor qilish"
-
-#: .\drinkShop\settings.py:140
-msgid "Russian"
-msgstr "Ruscha"
 
 #: .\product\models.py:35
 msgid "size"
@@ -215,6 +248,20 @@ msgstr "Saralashning ustuvorligi %(priority_number)s"
 msgid "title"
 msgstr "nomi"
 
+#: .\templates\admin\object_history.html:23
+msgid "User"
+msgstr "Foydalanuvchi"
+
 #: .\drinkShop\settings.py:138
 msgid "Uzbek"
 msgstr "O'zbekcha"
+
+#: .\templates\admin\change_form_object_tools.html:7
+#: .\templates\admin\edit_inline\stacked.html:18
+#: .\templates\admin\edit_inline\tabular.html:40
+msgid "View on site"
+msgstr "Saytda ko'rish"
+
+#: .\templates\admin\base.html:44
+msgid "View site"
+msgstr "Saytni ko'rish"
