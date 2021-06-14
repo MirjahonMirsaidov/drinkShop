@@ -20,14 +20,17 @@ class ProductListView(ListAPIView):
     filter_fields = ['brand', 'category']
 
     def get_queryset(self):
-        min = self.request.GET.get('min')
-        max = self.request.GET.get('max')
-        if not min or min == '':
-            min = 0
-        if not max or max == '':
-            max = Product.objects.all().order_by('-price').first().price
+        try:
+            min_price = self.request.GET.get('min')
+            max_price = self.request.GET.get('max')
+            if not min_price or min_price == '':
+                min_price = 0
+            if not max_price or max_price == '':
+                max_price = Product.objects.all().order_by('-price').first().price
 
-        return Product.objects.filter(price__range=(min, max)).select_related('brand', 'category').order_by('-id')
+            return Product.objects.filter(price__range=(min_price, max_price)).select_related('brand', 'category')
+        except:
+            return Product.objects.all()
 
 
 class CategoryListView(ListAPIView):
