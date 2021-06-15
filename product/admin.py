@@ -12,6 +12,7 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'view_products_link')
     search_fields = ('name',)
     list_display_links = ('name',)
+
     def view_products_link(self, obj):
         count = obj.product_set.count()
         url = (
@@ -30,6 +31,7 @@ class BrandAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'view_products_link')
     search_fields = ('name',)
     list_display_links = ('name',)
+
     def view_products_link(self, obj):
         count = obj.product_set.count()
         url = (
@@ -51,13 +53,10 @@ class ProductAdmin(admin.ModelAdmin):
     inlines = [ProductImageAdmin]
     list_display = ('id', 'title', 'category', 'brand', 'price', 'size', 'stock_count', 'created_at')
     list_display_links = ('title',)
-    list_filter = ('created_at', 'price', 'category', 'brand')
+    list_filter = ('created_at', 'category', 'brand')
     list_editable = ('price', 'stock_count')
     search_fields = ('title', 'brand__name', 'category__name')
-    list_per_page = 5
-    save_on_top = True
-    save_as = True
-
+    list_per_page = 10
 
     class Meta:
         model = Product

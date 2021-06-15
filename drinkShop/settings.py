@@ -37,7 +37,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # custom admin interface
-    'jazzmin',
+    # 'jazzmin',
+    'adminlte3',
+    'adminlte3_theme',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
