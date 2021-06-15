@@ -41,7 +41,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'jazzmin',
+    # 'jazzmin',
+    'adminlte3',
+    'adminlte3_theme',
     'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -140,6 +142,7 @@ MULTILINGUAL_LANGUAGES = (
     "uz-Uz",
 )
 
+LANGUAGE_CODE = 'uz'
 
 TIME_ZONE = 'Asia/Tashkent'
 
@@ -162,7 +165,8 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
-JAZZMIN_SETTINGS = {
-    "language_chooser": True
-}
+# JAZZMIN_SETTINGS = {
+#     "language_chooser": True,
+#     "show_ui_builder": True,
+# }
 
