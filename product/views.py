@@ -1,4 +1,5 @@
 import django_filters
+from django.db.models import Max
 from rest_framework import filters
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
@@ -26,7 +27,7 @@ class ProductListView(ListAPIView):
             if not min_price or min_price == '':
                 min_price = 0
             if not max_price or max_price == '':
-                max_price = Product.objects.all().order_by('-price').first().price
+                max_price = Product.objects.aggregate(Max('price')).get('price__max')
 
             return Product.objects.filter(price__range=(min_price, max_price)).select_related('brand', 'category')
         except:
