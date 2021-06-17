@@ -20,71 +20,71 @@ msgstr ""
 
 #: .\drinkShop\settings.py:134
 msgid "Uzbek"
-msgstr ""
+msgstr "O'zbek tili"
 
 #: .\drinkShop\settings.py:135
 msgid "Russian"
-msgstr ""
+msgstr "Rus tili"
 
 #: .\product\models.py:7 .\product\models.py:18
 msgid "name"
-msgstr ""
+msgstr "nomi"
 
 #: .\product\models.py:10
 msgid "Category"
-msgstr ""
+msgstr "Kategoriya"
 
 #: .\product\models.py:11
 msgid "Categories"
-msgstr ""
+msgstr "Kategoriyalar"
 
 #: .\product\models.py:21
 msgid "Brand"
-msgstr ""
+msgstr "Brend"
 
 #: .\product\models.py:22
 msgid "Brands"
-msgstr ""
+msgstr "Brendlar"
 
 #: .\product\models.py:29
 msgid "title"
-msgstr ""
+msgstr "nomlanishi"
 
 #: .\product\models.py:30
 msgid "description"
-msgstr ""
+msgstr "tafsilot"
 
 #: .\product\models.py:34
 msgid "price"
-msgstr ""
+msgstr "narx"
 
 #: .\product\models.py:35
 msgid "size"
-msgstr ""
+msgstr "o'lcham"
 
 #: .\product\models.py:36
 msgid "stock_count"
-msgstr ""
+msgstr "miqdor"
 
 #: .\product\models.py:52
 msgid "Product"
-msgstr ""
+msgstr "Maxsulot"
 
 #: .\product\models.py:53
 msgid "Products"
-msgstr ""
+msgstr "Maxsulot"
 
 #: .\product\models.py:61
 msgid "image"
-msgstr ""
+msgstr "rasm"
 
 #: .\product\models.py:64
 msgid "Image"
-msgstr ""
+msgstr "Rasm"
 
 #: .\product\models.py:65
 msgid "Images"
-msgstr ""
+msgstr "Rasmlar"
 
 #, python-format
 msgid "Delete selected %(verbose_name_plural)s"
@@ -123,7 +123,7 @@ msgid "Today"
 msgstr "Bugun"
 
 msgid "Past 7 days"
-msgstr "O'tgan 7 kun"
+msgstr "Oxirgi 7 kun"
 
 msgid "This month"
 msgstr "Shu oyda"
@@ -156,19 +156,19 @@ msgstr "Harakat:"
 
 #, python-format
 msgid "Add another %(verbose_name)s"
-msgstr "Boshqa%(verbose_name)s qo‘shish"
+msgstr "Boshqa %(verbose_name)s qo‘shish"
 
 msgid "Remove"
 msgstr "Olib tashlash"
 
 msgid "Addition"
-msgstr " Qo'shish"
+msgstr " Qo‘shish"
 
 msgid "Change"
-msgstr "O'zgartirish"
+msgstr "O‘zgartirish"
 
 msgid "Deletion"
-msgstr "O'chirish"
+msgstr "O‘chirish"
 
 msgid "action time"
 msgstr "harakat vaqti"
@@ -216,114 +216,100 @@ msgstr ""
 
 #, python-brace-format
 msgid "Added {name} “{object}”."
-msgstr ""
+msgstr "{name} “{object} qo‘shildi ”."
 
 msgid "Added."
-msgstr ""
+msgstr "Qo‘shildi"
 
 msgid "and"
-msgstr ""
+msgstr "va"
 
 #, python-brace-format
 msgid "Changed {fields} for {name} “{object}”."
-msgstr ""
+msgstr "{name} “{object}” dagi {fields} o‘zgartirildi."
 
 #, python-brace-format
 msgid "Changed {fields}."
-msgstr ""
+msgstr "{fields} o‘zgartirildi."
 
 #, python-brace-format
 msgid "Deleted {name} “{object}”."
-msgstr ""
+msgstr "{name} “{object}” o‘chirildi."
 
 msgid "No fields changed."
-msgstr ""
+msgstr "Maydonlar o‘zgartirilmagan"
 
 msgid "None"
-msgstr "Bo'sh"
+msgstr "Bo‘sh"
 
 msgid "Hold down “Control”, or “Command” on a Mac, to select more than one."
 msgstr ""
 
 #, python-brace-format
 msgid "The {name} “{obj}” was added successfully."
-msgstr ""
+msgstr "{name} “{obj}” muvaffaqiyatli qo‘shildi"
 
 msgid "You may edit it again below."
-msgstr ""
+msgstr "Quyida uni tahrirlashingiz mumkin"
 
 #, python-brace-format
-msgid ""
-"The {name} “{obj}” was added successfully. You may add another {name} below."
-msgstr ""
-
-#, python-brace-format
-msgid ""
-"The {name} “{obj}” was changed successfully. You may edit it again below."
-msgstr ""
+msgid "The {name} “{obj}” was added successfully. You may add another {name} below."
+msgstr "{name} “{obj}” muvaffaqiyatli qo‘shildi. Quyida yana {name} qo‘shishingiz mumkin."
 
 #, python-brace-format
 msgid "The {name} “{obj}” was added successfully. You may edit it again below."
-msgstr ""
-
-#, python-brace-format
-msgid ""
-"The {name} “{obj}” was changed successfully. You may add another {name} "
-"below."
-msgstr ""
+msgstr "{name} “{obj}” muvaffaqiyatli qo‘shildi. Quyida uni tahrirlashingiz mumkin."
 
 #, python-brace-format
 msgid "The {name} “{obj}” was changed successfully."
 msgstr "{name} \"{obj}\" muvaffaqiyatli o'zgartirildi."
 
-msgid ""
-"Items must be selected in order to perform actions on them. No items have "
-"been changed."
-msgstr ""
+msgid "Items must be selected in order to perform actions on them. No items have been changed."
+msgstr "Amallarni bajarish uchun qatorlardan tanlashingiz kerak."
 
 msgid "No action selected."
-msgstr ""
+msgstr "Hech qanday harakat tanlanmadi"
 
 #, python-format
 msgid "The %(name)s “%(obj)s” was deleted successfully."
-msgstr "%(name)s%(obj)smuvaffaqiyatli o'chirildi"
+msgstr "%(name)s “%(obj)s” muvaffaqiyatli o'chirildi"
 
 #, python-format
 msgid "%(name)s with ID “%(key)s” doesn’t exist. Perhaps it was deleted?"
-msgstr ""
+msgstr "“%(key)s” ID li %(name)s topilmadi. O'chirilgan bo'lishi mumkin."
 
 #, python-format
 msgid "Add %s"
-msgstr "Qo'shish %s"
+msgstr "%s qo'shish"
 
 #, python-format
 msgid "Change %s"
-msgstr "O'zgartirish %s"
+msgstr " %s o'zgartirish"
 
 #, python-format
 msgid "View %s"
-msgstr "Ko'rish %s"
+msgstr "%s ko'rish"
 
 msgid "Database error"
-msgstr ""
+msgstr "Ma'lumotlar bazasi bilan bog'liq xatolik"
 
 #, python-format
 msgid "%(count)s %(name)s was changed successfully."
 msgid_plural "%(count)s %(name)s were changed successfully."
-msgstr[0] ""
+msgstr[0] "%(count)s %(name)s muvaffaqiyatli o'zgartirildi"
 
 #, python-format
 msgid "%(total_count)s selected"
 msgid_plural "All %(total_count)s selected"
-msgstr[0] ""
+msgstr[0] "%(total_count)s tanlandi"
 
 #, python-format
-msgid "0 of %(cnt)s selected"
-msgstr ""
+msgid "0 of %(count)s selected"
+msgstr "%(count)s dan tanlanmadi"
 
 #, python-format
 msgid "Change history: %s"
-msgstr ""
+msgstr "%s tarixini o'zgartirish"
 
 #. Translators: Model verbose name and instance representation,
 #. suitable to be an item in a list.
@@ -338,29 +324,29 @@ msgid ""
 msgstr ""
 
 msgid "Django site admin"
-msgstr ""
+msgstr "Adminstrator"
 
 msgid "Django administration"
-msgstr ""
+msgstr "Adminstrator paneli"
 
 msgid "Site administration"
-msgstr ""
+msgstr "Sayt adminstratori"
 
 msgid "Log in"
-msgstr ""
+msgstr "Kirish"
 
 #, python-format
 msgid "%(app)s administration"
-msgstr ""
+msgstr "%(app)s adminstratori"
 
 msgid "Page not found"
-msgstr ""
+msgstr "Sahifa topilmadi"
 
 msgid "We’re sorry, but the requested page could not be found."
-msgstr ""
+msgstr "Kechirasiz, lekin so'ralgan sahifa topilmadi"
 
 msgid "Home"
-msgstr ""
+msgstr "Bosh sahifa"
 
 msgid "Server error"
 msgstr "Server xatoligi"
@@ -380,21 +366,21 @@ msgid "Run the selected action"
 msgstr "Tanlangan faoliyatni ishga tushirish"
 
 msgid "Go"
-msgstr ""
+msgstr "Qo'llash"
 
 msgid "Click here to select the objects across all pages"
 msgstr ""
 
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
-msgstr ""
+msgstr "Barcha sahifalardagi obyektlarni tanlash uchun shu erni bosing"
 
 msgid "Clear selection"
-msgstr ""
+msgstr "Tanlanganlarni tozalash"
 
 #, python-format
 msgid "Models in the %(name)s application"
-msgstr ""
+msgstr "%(name)s ilovasidagi modellar"
 
 msgid "Add"
 msgstr "Qo'shish"
@@ -403,28 +389,27 @@ msgid "View"
 msgstr "Ko'rish"
 
 msgid "You don’t have permission to view or edit anything."
-msgstr ""
+msgstr "Sizda biror narsani ko'rish yoki tahrirlash uchun ruxsat yo'q"
 
 msgid ""
-"First, enter a username and password. Then, you’ll be able to edit more user "
-"options."
-msgstr ""
+"First, enter a username and password. Then, you’ll be able to edit more user options."
+msgstr "Avval foydalanuvchi nomi va parolni kiriting. Keyin, siz ko'proq foydalanuvchi parametrlarini tahrirlash imkoniyatiga ega bo'lasiz."
 
 msgid "Enter a username and password."
-msgstr "Username va parolni kiritish"
+msgstr "Foydalanuvchi nomi va parolni kiritish"
 
 msgid "Change password"
 msgstr "Parolni o'zgartirish"
 
 msgid "Please correct the error below."
-msgstr ""
+msgstr "Iltimos, quyidagi xatoni to'g'irlang"
 
 msgid "Please correct the errors below."
-msgstr ""
+msgstr "Iltimos, quyidagi xatoliklarni to'g'irlang"
 
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
-msgstr ""
+msgstr "<strong>%(username)s</strong> uchun yangi parolni kiriting"
 
 msgid "Welcome,"
 msgstr "Xush kelibsiz,"
@@ -440,10 +425,10 @@ msgstr "Chiqish"
 
 #, python-format
 msgid "Add %(name)s"
-msgstr ""
+msgstr "%(name)s qo'shish"
 
 msgid "History"
-msgstr ""
+msgstr "Tarix"
 
 msgid "View on site"
 msgstr "Saytda ko'rish"
@@ -452,51 +437,48 @@ msgid "Filter"
 msgstr "Saralash"
 
 msgid "Clear all filters"
-msgstr ""
+msgstr "Filtrlarni tozalash"
 
 msgid "Remove from sorting"
 msgstr "Tartiblashdan chiqarish"
 
 #, python-format
 msgid "Sorting priority: %(priority_number)s"
-msgstr ""
+msgstr "Saralashning ustuvorligi: %(priority_number)s"
 
 msgid "Toggle sorting"
-msgstr ""
+msgstr "Almashtirishli saralash"
 
 msgid "Delete"
 msgstr "O'chirish"
 
 #, python-format
-msgid ""
-"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
-"related objects, but your account doesn't have permission to delete the "
-"following types of objects:"
-msgstr ""
+msgid "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting related objects, but your account doesn't have permission to delete the following types of objects:"
+msgstr "% (Object_name) s '% (escaped_object) s' ni o'chirib tashlash, tegishli obyektlarni o'chirishga olib keladi, ammo sizning hisob qaydnomangiz quyidagi turdagi ob'ektlarni o'chirishga ruxsat bermaydi:"
 
 #, python-format
-msgid ""
-"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
-"following protected related objects:"
-msgstr ""
+msgid "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the following protected related objects:"
+msgstr "% (Object_name) s '% (escaped_object) s' ni o'chirish uchun quyidagi himoyalangan tegishli ob'ektlarni o'chirish talab qilinadi:"
 
 #, python-format
 msgid ""
 "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
 msgstr ""
+"% (Object_name) s \ "% (escaped_object) s \" ni o'chirishni xohlaysizmi? "
+"Quyidagi barcha tegishli narsalar o'chiriladi:"
 
 msgid "Objects"
-msgstr ""
+msgstr "Obyektlar"
 
 msgid "Yes, I’m sure"
-msgstr ""
+msgstr "Ha, roziman"
 
 msgid "No, take me back"
-msgstr ""
+msgstr "Yo'q, qaytishnii xohlayman"
 
 msgid "Delete multiple objects"
-msgstr ""
+msgstr "Bir nechta obyektlar o'chirish"
 
 #, python-format
 msgid ""
@@ -561,10 +543,10 @@ msgid "Date/time"
 msgstr ""
 
 msgid "User"
-msgstr ""
+msgstr "Foydalanuvchi"
 
 msgid "Action"
-msgstr ""
+msgstr "Harakat"
 
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
@@ -572,13 +554,13 @@ msgid ""
 msgstr ""
 
 msgid "Show all"
-msgstr ""
+msgstr "Hammasini ko'rish"
 
 msgid "Save"
 msgstr "Saqlash"
 
 msgid "Popup closing…"
-msgstr ""
+msgstr "Oyna yopilmoqda…"
 
 msgid "Search"
 msgstr "Izlash"
@@ -593,27 +575,27 @@ msgid "%(full_result_count)s total"
 msgstr ""
 
 msgid "Save as new"
-msgstr ""
+msgstr "Yangi sifatida qo'shish"
 
 msgid "Save and add another"
-msgstr ""
+msgstr "Saqlash va boshqa qo'shish"
 
 msgid "Save and continue editing"
-msgstr ""
+msgstr "Saqlash va tahrirlash"
 
 msgid "Save and view"
-msgstr ""
+msgstr "Saqlash va ko'rish"
 
 msgid "Close"
-msgstr ""
+msgstr "Yopish"
 
 #, python-format
 msgid "Change selected %(model)s"
-msgstr ""
+msgstr "Talangan %(model)s ni o'zgartirish"
 
 #, python-format
 msgid "Add another %(model)s"
-msgstr ""
+msgstr "Boshqa %(model)s qo'shish"
 
 #, python-format
 msgid "Delete selected %(model)s"
@@ -623,13 +605,13 @@ msgid "Thanks for spending some quality time with the Web site today."
 msgstr ""
 
 msgid "Log in again"
-msgstr ""
+msgstr "Qayta kirish"
 
 msgid "Password change"
-msgstr ""
+msgstr "Parolni o'zgartirish"
 
 msgid "Your password was changed."
-msgstr ""
+msgstr "Sizning parolingiz o'zgartirildi"
 
 msgid ""
 "Please enter your old password, for security’s sake, and then enter your new "
@@ -640,13 +622,13 @@ msgid "Change my password"
 msgstr ""
 
 msgid "Password reset"
-msgstr ""
+msgstr "Parolni tiklash"
 
 msgid "Your password has been set.  You may go ahead and log in now."
 msgstr ""
 
 msgid "Password reset confirmation"
-msgstr ""
+msgstr "Parolni tiklashni tasdiqlash"
 
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
@@ -654,10 +636,10 @@ msgid ""
 msgstr ""
 
 msgid "New password:"
-msgstr ""
+msgstr "Yangi parol"
 
 msgid "Confirm password:"
-msgstr ""
+msgstr "Parolni tasdiqlash"
 
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
@@ -699,10 +681,10 @@ msgid ""
 msgstr ""
 
 msgid "Email address:"
-msgstr ""
+msgstr "Email:"
 
 msgid "Reset my password"
-msgstr ""
+msgstr "Parolimni tiklash"
 
 msgid "All dates"
 msgstr ""
@@ -729,7 +711,7 @@ msgid "Lookup"
 msgstr ""
 
 msgid "Currently:"
-msgstr ""
+msgstr "Hozirgi:"
 
 msgid "Change:"
-msgstr ""
+msgstr "O'zgartirish"
