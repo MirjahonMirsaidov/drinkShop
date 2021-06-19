@@ -63,6 +63,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -142,8 +143,6 @@ MULTILINGUAL_LANGUAGES = (
     "ru-Ru",
     "uz-Uz",
 )
-
-TRANSLATABLE_MODEL_MODULES = ["product.models", ]
 
 LANGUAGE_CODE = 'uz'
 
