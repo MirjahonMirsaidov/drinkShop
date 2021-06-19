@@ -76,7 +76,7 @@ ROOT_URLCONF = 'drinkShop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -143,7 +143,7 @@ MULTILINGUAL_LANGUAGES = (
     "uz-Uz",
 )
 
-TRANSLATABLE_MODEL_MODULES = ["product.models",]
+TRANSLATABLE_MODEL_MODULES = ["product.models", ]
 
 LANGUAGE_CODE = 'uz'
 
@@ -172,4 +172,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 #     "language_chooser": True,
 #     "show_ui_builder": True,
 # }
-
