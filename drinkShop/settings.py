@@ -143,6 +143,8 @@ MULTILINGUAL_LANGUAGES = (
     "uz-Uz",
 )
 
+TRANSLATABLE_MODEL_MODULES = ["product.models",]
+
 LANGUAGE_CODE = 'uz'
 
 TIME_ZONE = 'Asia/Tashkent'
