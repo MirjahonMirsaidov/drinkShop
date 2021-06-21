@@ -117,7 +117,7 @@ msgid "Unknown"
 msgstr "Noma'lum"
 
 msgid "Any date"
-msgstr "Istalgan kun"
+msgstr "Ixtiyoriy kun"
 
 msgid "Today"
 msgstr "Bugun"
@@ -243,7 +243,7 @@ msgid "None"
 msgstr "Bo‘sh"
 
 msgid "Hold down “Control”, or “Command” on a Mac, to select more than one."
-msgstr ""
+msgstr "Bittadan ko'p belgilash uchun "Control", yoki Mac da "Command" ni bosing "
 
 #, python-brace-format
 msgid "The {name} “{obj}” was added successfully."
@@ -315,13 +315,14 @@ msgstr "%s tarixini o'zgartirish"
 #. suitable to be an item in a list.
 #, python-format
 msgid "%(class_name)s %(instance)s"
-msgstr ""
+msgstr "%(class_name)s %(instance)s"
 
 #, python-format
 msgid ""
 "Deleting %(class_name)s %(instance)s would require deleting the following "
 "protected related objects: %(related_objects)s"
-msgstr ""
+msgstr "%(class_name)s %(instance)s ni o'chirish uchun quyidagilar o'chirilishi kerak "
+"Himoyalangan tegishli obyektlar: %(related_objects)s"
 
 msgid "Django site admin"
 msgstr "Adminstrator"
@@ -360,7 +361,8 @@ msgstr "Server xatoligi <em>(500)</em>"
 msgid ""
 "There’s been an error. It’s been reported to the site administrators via "
 "email and should be fixed shortly. Thanks for your patience."
-msgstr ""
+msgstr "Xatolik yuz berdi. Bu haqda sayt ma'murlariga elektron pochta orqali xabar berilgan.
+va tez orada tuzatilishi kerak. Sabr qilganingiz uchun tashakkur."
 
 msgid "Run the selected action"
 msgstr "Tanlangan faoliyatni ishga tushirish"
@@ -369,7 +371,7 @@ msgid "Go"
 msgstr "Qo'llash"
 
 msgid "Click here to select the objects across all pages"
-msgstr ""
+msgstr "Barcha sahifalardagi obyektlarni tanlash uchun shu erni bosing"
 
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
@@ -454,11 +456,11 @@ msgstr "O'chirish"
 
 #, python-format
 msgid "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting related objects, but your account doesn't have permission to delete the following types of objects:"
-msgstr "% (Object_name) s '% (escaped_object) s' ni o'chirib tashlash, tegishli obyektlarni o'chirishga olib keladi, ammo sizning hisob qaydnomangiz quyidagi turdagi ob'ektlarni o'chirishga ruxsat bermaydi:"
+msgstr "% (Object_name) s '% (escaped_object) s' ni o'chirib tashlash, tegishli obyektlarni o'chirishga olib keladi, ammo sizning hisob qaydnomangiz quyidagi turdagi obyektlarni o'chirishga ruxsat bermaydi:"
 
 #, python-format
 msgid "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the following protected related objects:"
-msgstr "% (Object_name) s '% (escaped_object) s' ni o'chirish uchun quyidagi himoyalangan tegishli ob'ektlarni o'chirish talab qilinadi:"
+msgstr "%(Object_name)s '%(escaped_object)s'ni o'chirish uchun quyidagi himoyalangan tegishli obyektlarni o'chirish talab qilinadi:"
 
 #, python-format
 msgid ""
@@ -486,25 +488,30 @@ msgid ""
 "objects, but your account doesn't have permission to delete the following "
 "types of objects:"
 msgstr ""
+"Tanlangan% (objects_name) sni o'chirib tashlash, tegishli obyektlarni o'chirishga 
+"olib keladi, ammo sizning hisob qaydnomangizda quyidagilarni o'chirishga ruxsat yo'q"
+"obyektlarning turlari:"
 
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
-msgstr ""
+msgstr "Tanlangan %(objects_name)sni o'chirish uchun quyidagi himoyalangan tegishli obyektlarni o'chirish talab qilinadi:"
 
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
 "following objects and their related items will be deleted:"
 msgstr ""
+"Tanlangan% (objects_name) s-ni o'chirishni xohlaysizmi? "
+"quyidagi obyektlar va ularga tegishli narsalar hammasi o'chiriladi:"
 
 msgid "Delete?"
 msgstr "O'chirasizmi?"
 
 #, python-format
 msgid " By %(filter_title)s "
-msgstr ""
+msgstr "%(filter_title)s bo'yicha"
 
 msgid "Summary"
 msgstr "Xulosa"
@@ -516,31 +523,36 @@ msgid "My actions"
 msgstr "Mening harakatlarim"
 
 msgid "None available"
-msgstr ""
+msgstr "Mavjud emas"
 
 msgid "Unknown content"
-msgstr ""
+msgstr "Tarkib aniqlanmagan"
 
 msgid ""
 "Something’s wrong with your database installation. Make sure the appropriate "
 "database tables have been created, and make sure the database is readable by "
 "the appropriate user."
 msgstr ""
+"Ma'lumotlar bazasini o'rnatishda xatolik yuz berdi. Muvofiqligiga ishonch hosil qiling "
+"ma'lumotlar bazasi jadvallari yaratilgan va ma'lumotlar bazasi tomonidan o'qilishi" "mumkinligiga ishonch hosil qiling."
+"tegishli foydalanuvchi."
 
 #, python-format
 msgid ""
 "You are authenticated as %(username)s, but are not authorized to access this "
 "page. Would you like to login to a different account?"
 msgstr ""
+"Siz %(username)s sifatida ro'yxatdan o'tgansiz, lekin bu sahifaga kirish huquqingiz yo'q."
+"Boshqa hisobga kirishni xohlaysizmi?"
 
 msgid "Forgotten your password or username?"
-msgstr ""
+msgstr "Parol yoki username ni unutdingizmi?"
 
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Navigatsiyani almashtirish"
 
 msgid "Date/time"
-msgstr ""
+msgstr "Sana/vaqt"
 
 msgid "User"
 msgstr "Foydalanuvchi"
@@ -551,7 +563,7 @@ msgstr "Harakat"
 msgid ""
 "This object doesn’t have a change history. It probably wasn’t added via this "
 "admin site."
-msgstr ""
+msgstr "Ushbu obyektda o'zgarish tarixi yo'q. Ehtimol ushbu panel orqali qo'shilmagan."
 
 msgid "Show all"
 msgstr "Hammasini ko'rish"
@@ -572,7 +584,7 @@ msgstr[0] ""
 
 #, python-format
 msgid "%(full_result_count)s total"
-msgstr ""
+msgstr "Jami %(full_result_count)s"
 
 msgid "Save as new"
 msgstr "Yangi sifatida qo'shish"
@@ -591,7 +603,7 @@ msgstr "Yopish"
 
 #, python-format
 msgid "Change selected %(model)s"
-msgstr "Talangan %(model)s ni o'zgartirish"
+msgstr "Tanlangan %(model)sni o'zgartirish"
 
 #, python-format
 msgid "Add another %(model)s"
@@ -599,10 +611,10 @@ msgstr "Boshqa %(model)s qo'shish"
 
 #, python-format
 msgid "Delete selected %(model)s"
-msgstr ""
+msgstr "Tanlangan %(model)sni o'chirish"
 
 msgid "Thanks for spending some quality time with the Web site today."
-msgstr ""
+msgstr "Bugun biz bilan bir oz foydali vaqt o'tkazganingiz uchun tashakkur"
 
 msgid "Log in again"
 msgstr "Qayta kirish"
@@ -619,21 +631,20 @@ msgid ""
 msgstr ""
 
 msgid "Change my password"
-msgstr ""
+msgstr "Parolni o'zgartirish"
 
 msgid "Password reset"
 msgstr "Parolni tiklash"
 
 msgid "Your password has been set.  You may go ahead and log in now."
-msgstr ""
+msgstr "Parolingiz o'rnatildi. Hisobingizga kirishingiz mumkin."
 
 msgid "Password reset confirmation"
 msgstr "Parolni tiklashni tasdiqlash"
 
-msgid ""
-"Please enter your new password twice so we can verify you typed it in "
-"correctly."
+msgid "Please enter your new password twice so we can verify you typed it in correctly."
 msgstr ""
+"Iltimos, yangi parolingizni ikki marta kiriting, shunda biz uni to'g'ri kiritganingizni" "tasdiqlashimiz mumkin "
 
 msgid "New password:"
 msgstr "Yangi parol"
@@ -645,40 +656,46 @@ msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
 msgstr ""
+"Parolni tiklash havolasi yaroqsiz edi, ehtimol u allaqachon ishlatilgan. 
+"Parolni qayta tiklash uchun so'rov yuboring."
 
 msgid ""
 "We’ve emailed you instructions for setting your password, if an account "
 "exists with the email you entered. You should receive them shortly."
 msgstr ""
+"Agar siz kiritgan elektron pochta orqali hisob mavjud bo'lsa, parolni o'rnatish bo'yicha" "ko'rsatmalarni elektron pochta orqali jo'natdik. Tez orada ularni qabul qilishingiz kerak."
 
 msgid ""
 "If you don’t receive an email, please make sure you’ve entered the address "
 "you registered with, and check your spam folder."
 msgstr ""
+"Agar elektron pochta xabarini olmasangiz, ro'yxatdan o'tgan manzilingizni kiritganingizga" "ishonch hosil qiling va spam papkangizni tekshiring"
 
 #, python-format
 msgid ""
 "You're receiving this email because you requested a password reset for your "
 "user account at %(site_name)s."
 msgstr ""
+"Siz ushbu elektron xatni %(site_name)s da foydalanuvchi hisob qaydnomangiz parolini" "tiklashni talab qilganingiz uchun olasiz"
 
 msgid "Please go to the following page and choose a new password:"
-msgstr ""
+msgstr "Iltimos, quyidagi sahifaga o'ting va yangi parolni tanlang:"
 
 msgid "Your username, in case you’ve forgotten:"
-msgstr ""
+msgstr "Agar, siz username ni unutgan bo'lsangiz:"
 
 msgid "Thanks for using our site!"
-msgstr ""
+msgstr "Saytimizdan foydalanganingiz uchun tashakkur!"
 
 #, python-format
 msgid "The %(site_name)s team"
-msgstr ""
+msgstr "%(site_name)s sayti jamoasi"
 
 msgid ""
 "Forgotten your password? Enter your email address below, and we’ll email "
 "instructions for setting a new one."
 msgstr ""
+"Parolni unutdingizmi? Quyida emailingizni kiriting va biz yangisini o'rnatish bo'yicha" "ko'rsatmalarni elektron pochta orqali yuboramiz."
 
 msgid "Email address:"
 msgstr "Email:"
@@ -687,28 +704,28 @@ msgid "Reset my password"
 msgstr "Parolimni tiklash"
 
 msgid "All dates"
-msgstr ""
+msgstr "Barcha sanalar"
 
 #, python-format
 msgid "Select %s"
-msgstr ""
+msgstr "%s tanlash"
 
 #, python-format
 msgid "Select %s to change"
-msgstr ""
+msgstr "O'zgartirish uchun %s tanlash"
 
 #, python-format
 msgid "Select %s to view"
-msgstr ""
+msgstr "Ko'rish uchun %s tanlash"
 
 msgid "Date:"
-msgstr ""
+msgstr "Sana"
 
 msgid "Time:"
-msgstr ""
+msgstr "Vaqt"
 
 msgid "Lookup"
-msgstr ""
+msgstr "Izlash"
 
 msgid "Currently:"
 msgstr "Hozirgi:"
