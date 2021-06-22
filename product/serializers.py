@@ -3,11 +3,28 @@ from rest_framework import serializers
 from .models import *
 
 
-class CategorySerializer(serializers.ModelSerializer):
+class ProductInsideCategorySerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Product
+        fields = '__all__'
+
+
+class CategoryWithProductsSerializer(serializers.ModelSerializer):
+    products = ProductInsideCategorySerializer(required=False, many=True)
 
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = ('id', 'name', 'products')
+
+
+class CategorySerializer(serializers.ModelSerializer):
+    products = ProductInsideCategorySerializer(required=False, many=True)
+    product_count = serializers.IntegerField(required=False)
+
+    class Meta:
+        model = Category
+        fields = ('id', 'name', 'products', 'product_count')
 
 
 class BrandSerializer(serializers.ModelSerializer):

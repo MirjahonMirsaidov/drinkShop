@@ -20,7 +20,7 @@ class Brand(models.Model):
 class Product(models.Model):
     title = models.CharField(max_length=100)
     description = HTMLField()
-    category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
+    category = models.ForeignKey(Category, on_delete=models.DO_NOTHING, related_name='products')
     brand = models.ForeignKey(Brand, on_delete=models.DO_NOTHING)
     slug = models.SlugField(default='', editable=False)
     price = models.FloatField()

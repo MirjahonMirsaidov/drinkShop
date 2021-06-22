@@ -1,5 +1,5 @@
 import django_filters
-from django.db.models import Max
+from django.db.models import Max, Count, Value
 from rest_framework import filters
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
@@ -36,6 +36,14 @@ class ProductListView(ListAPIView):
 
 class CategoryListView(ListAPIView):
     serializer_class = CategorySerializer
+    queryset = Category.objects.all()
+
+    def get_queryset(self):
+        return Category.objects.annotate(product_count=Count('products')).values('id', 'name', 'product_count')
+
+
+class CategoryWithProductsListView(ListAPIView):
+    serializer_class = CategoryWithProductsSerializer
     queryset = Category.objects.all()
 
 
