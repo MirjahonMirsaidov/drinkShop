@@ -16,7 +16,7 @@ class ProductListView(ListAPIView):
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
     filter_backends = [django_filters.rest_framework.DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    ordering_fields = ['price']
+    ordering_fields = ['price', 'name']
     search_fields = ['brand__name', 'category__name', 'title']
     filter_fields = ['brand', 'category']
 
