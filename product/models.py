@@ -5,6 +5,7 @@ from tinymce.models import HTMLField
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
+    slug = models.SlugField(default='', editable=False)
 
     def __str__(self):
         return self.name

@@ -39,7 +39,7 @@ class CategoryListView(ListAPIView):
     queryset = Category.objects.all()
 
     def get_queryset(self):
-        return Category.objects.annotate(product_count=Count('products')).values('id', 'name', 'product_count')
+        return Category.objects.annotate(product_count=Count('products')).values('id', 'name', 'slug', 'product_count')
 
 
 class CategoryWithProductsListView(ListAPIView):
