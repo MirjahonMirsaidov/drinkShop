@@ -14,7 +14,7 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
 
     def view_products_link(self, obj):
-        count = obj.product_set.count()
+        count = obj.products.count()
         url = (
                 reverse("admin:product_product_changelist")
                 + "?"
@@ -33,7 +33,7 @@ class BrandAdmin(admin.ModelAdmin):
     list_display_links = ('name',)
 
     def view_products_link(self, obj):
-        count = obj.product_set.count()
+        count = obj.products.count()
         url = (
                 reverse("admin:product_product_changelist")
                 + "?"
